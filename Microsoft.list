@@ -69,7 +69,7 @@ HOST-SUFFIX,ankarazirvesi2018.com,Microsoft
 HOST-SUFFIX,api-extractor.com,Microsoft
 HOST-SUFFIX,apihub-internal.cn,Microsoft
 HOST-SUFFIX,apisof.net,Microsoft
-HOST-SUFFIX,appcenter.ms,Microsoft
+# HOST-SUFFIX,appcenter.ms,Microsoft
 HOST-SUFFIX,applicationinsights.io,Microsoft
 HOST-SUFFIX,applicationinsights.net,Microsoft
 HOST-SUFFIX,appserviceenvironment.cn,Microsoft
