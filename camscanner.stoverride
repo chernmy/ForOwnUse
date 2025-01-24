@@ -1,0 +1,19 @@
+#!desc=解锁扫描全能王
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/cs.png
+#!version 6.24.5
+name: CamScanner_VIP
+desc: 解锁扫描全能王
+http:
+  mitm:
+    - "ap*.intsig.net"
+	- "*.camscanner.com"
+  script:
+    - match: https:\/\/.*\.(intsig\.net|camscanner\.com)
+      name: CamScanner_VIP_script
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  CamScanner_VIP_script:
+    url: https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+    interval: 86400
