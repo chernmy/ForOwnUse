@@ -1,0 +1,16 @@
+#!name = Baimiao
+#!desc = 白描解锁。
+#!openUrl = 
+#!tag = 解锁会员
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.5(805)
+#!icon = 
+#!date = 2025-01-27
+
+[Script]
+#白描 hostname = baimiao.uzero.cn
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/.+\/(appLaunchWithUser|getAnnouncement|checkLoginClient) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/baimiao.js, requires-body=true, timeout=60, tag=baimiao
+
+[MITM]
+hostname = baimiao.uzero.cn
