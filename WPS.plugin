@@ -1,0 +1,16 @@
+#!name = WPS
+#!desc = WPS解锁。
+#!openUrl = 
+#!tag = 解锁会员
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.5(805)
+#!icon = 
+#!date = 2025-01-27
+
+[Script]
+#WPS Office hostname = *.wps.cn
+http-response ^https?:\/\/(vas|account|drive)\.wps\.(cn|com)\/(query\/api\/.+\/list_purchase_info|api\/(v\d\/spaces|users\/.+\/overview)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/WPS.js, requires-body=true, timeout=60, tag=WPS
+
+[MITM]
+hostname = *.wps.cn, *.wps.com
